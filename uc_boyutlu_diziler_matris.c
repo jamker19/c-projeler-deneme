@@ -10,38 +10,13 @@ int main() {
                                    { {13, 4, 56, 3}, {5, 9, 3, 5}, {3, 1, 4, 9} } };
     
     int i, j, k;
-    
-    // Tabloları gezen dış döngü (Sayfa 1 ve Sayfa 2)
     for (i = 0; i < 2; i++)
     {
-        // Seçili tablonun satırlarını gezen döngü
         for (j = 0; j < 3; j++)
         {
-            // Satırın içindeki sütunları (sayıları) tek tek basan döngü
             for (k = 0; k < 4; k++)
             {
                 printf("%d ", benimMatrisim[i][j][k]);
-            }
-            printf("\n"); // Bir satır tamamen bitince aşağı kaydır
-        }
-        printf("............\n"); // Bir sayfa/tablo tamamen bitince araya çizgi çek
-    }
-
-    // MÜHENDİSLİK CHALLENGE: Sadece Çift Sayıları Ekrana Basma
-    // Bu mantık, ileride veri analizi yaparken filtreleme algoritmalarını rahatça yazmanı sağlar.
-    printf("\n--- Kendimizden Bir Şeyler Kattık: Sadece Cift Sayilar ---\n");
-    for (i = 0; i < 2; i++)
-    {
-        for (j = 0; j < 3; j++)
-        {
-            for (k = 0; k < 4; k++)
-            {
-                // Sayının 2'ye bölümünden kalan 0 ise (yani çift sayı ise) ekrana yazdır
-                if (benimMatrisim[i][j][k] % 2 == 0) {
-                    printf("%d ", benimMatrisim[i][j][k]);
-                } else {
-                    printf("   "); // Tek sayıların yerini boş bırakarak tabloyu bozma
-                }
             }
             printf("\n");
         }
