@@ -13,9 +13,9 @@ int main()
 
     /* Dosyayı "w" (write/yazma) modunda açıyoruz.
        NOT: Eğer bu isimde bir dosya yoksa sıfırdan oluşturulur, 
-       varsa içindeki eski veriler tamamen silinir!
+       varsa içindeki eski veriler tamamen silinir!x
     */
-    fPtr = fopen("data/file1.txt", "w");
+    fPtr = fopen("file1.txt", "w");
 
     /* Dosya başarıyla açılamadıysa (Klasör yolu yanlışsa veya izin yoksa) */
     if(fPtr == NULL)
